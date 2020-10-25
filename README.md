@@ -22,34 +22,46 @@ The dataset is imbalanced because around 22% percent of users have canceled the 
     * Flask
     * pyspark
     * seaborn
+    * plotly
 
 
 * install python 3.8
 * Install required packages with:
     * pip install -r requirements.txt
 
-**Step 1** - pending
+**Step Run app** -  run.py - run at root of app folder.
 
+cmd - python app.py
 
 ## FOLDER STRUCTURE
 
 
-1. Data Folder
-* `calendar.csv` - Data used in Write_A_Data_Science_Blog_Post.ipynb
-* `listings.csv` - Data used in Write_A_Data_Science_Blog_Post.ipynb
-* `reviews.csv` - Data containing user reviews not used in project
+- app 
+| - template
+| |- master.html - main page of web app
+|- run.py  - Flask file that runs app
+| - data
+| |- features.csv - file containing a best model features
+
+* `best_GBTClassifier_model` - Folder with Spark ML saved model
+* `imgs` - App pictures
+* `requirements.txt` - File containing all python module requirements
+* `Sparkify.ipynb` - File containing project code
+
+
+
 ## Results
 
-After hyperparameter tuning, the model did not perform any better. I m confident that this was due to the additional training needed. The numFolds was kept low to reduce training time for the project, especially after Identifying an issue with the training data where the models were using incorrect features. The results are indicative of how SVM models behave with a smaller dataset, which also yields higher accuracy. The total number of features was 7 giving the SVM an edge over the gradient boosting model because of the dataset. The increase in metrics might decline as the data gets bigger and more features are added and probably allowing the Gradient bosted model to perform better.
+After hyperparameter tuning, the GBT model did perform better. There is evidence that this was due to the additional training. The numFolds was kept low to reduce training time for the project, especially after Identifying an issue with the training data where the models were using incorrect features. The results indicate that further training could improve the model. The total number of features gave the gradient boosting model a better performance than SVM. The increase in metrics might increase as the data gets bigger and more features are added.
 
 Should additional training not increase model performance. More feature engineering could be required. For Example, identifying gaps at logon or just looking back a couple of weeks to see if the user behavior has changed.
 
 ## Best Model
-Model SVM
+Model GBT
 Metrics
 Accuracy:  0.7435897435897436
-F-1 Score:  0.6342383107088989
-Area under ROC Curve:  0.5
+F-1 Score:  0.7006639194139195
+Area under ROC Curve:  0.5655172413793104
 
 ## Reflection
 

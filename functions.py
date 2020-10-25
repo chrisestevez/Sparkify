@@ -8,7 +8,7 @@ from pyspark.ml.classification import GBTClassifier, LinearSVC
 from pyspark.ml.evaluation import MulticlassClassificationEvaluator, \
     BinaryClassificationEvaluator
 from pyspark.ml.tuning import ParamGridBuilder, CrossValidator
-
+ 
 def create_session():
     """Creates a spark sesion.
 
