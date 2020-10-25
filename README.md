@@ -50,7 +50,7 @@ cmd - python app.py
 * `requirements.txt` - File containing all python module requirements
 * `Sparkify.ipynb` - File containing project code
 
-# WEB APP SCREENSHOTS
+## Web App Screenshots
 
 <img src="./imgs/app.png"  weight="600" height="500"/>
 
