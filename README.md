@@ -76,10 +76,10 @@ The best model was the GBTClassifier with the below parameters. The final model 
 
 ### hyperparameter best model
 
-maxIter: 20
-maxDepth: 2
-maxBins 40
-minInstancesPerNode: 1
+* maxIter: 20
+* maxDepth: 2
+* maxBins 40
+* minInstancesPerNode: 1
 
 After hyperparameter tuning, the GBT model did perform better. There is evidence that this was due to the additional training. The numFolds was kept low to reduce training time for the project, especially after Identifying an issue with the training data where the models were using incorrect features. The results indicate that further training could improve the model. The total number of features gave the gradient boosting model a better performance than SVM. The increase in metrics might increase as the data gets bigger and more features are added.
 
@@ -87,11 +87,14 @@ Should additional training not increase model performance. More feature engineer
 
 
 ## Best Model
+
 Model GBT
+
 Metrics
-Accuracy:  0.7435897435897436
-F-1 Score:  0.7006639194139195
-Area under ROC Curve:  0.5655172413793104
+
+* Accuracy:  0.7435897435897436
+* F-1 Score:  0.7006639194139195
+* Area under ROC Curve:  0.5655172413793104
 
 ## Reflection
 
