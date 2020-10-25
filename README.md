@@ -42,6 +42,7 @@ cmd - python app.py
 |- run.py  - Flask file that runs app
 | - data
 | |- features.csv - file containing a best model features
+
 ```
 
 * `best_GBTClassifier_model` - Folder with Spark ML saved model
