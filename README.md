@@ -35,19 +35,23 @@ cmd - python app.py
 
 ## FOLDER STRUCTURE
 
-
+```
 - app 
 | - template
 | |- master.html - main page of web app
 |- run.py  - Flask file that runs app
 | - data
 | |- features.csv - file containing a best model features
+```
 
 * `best_GBTClassifier_model` - Folder with Spark ML saved model
 * `imgs` - App pictures
 * `requirements.txt` - File containing all python module requirements
 * `Sparkify.ipynb` - File containing project code
 
+# WEB APP SCREENSHOTS
+
+<img src="./imgs/app.png"  weight="600" height="500"/>
 
 
 ## Results
