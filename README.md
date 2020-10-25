@@ -65,7 +65,7 @@ cmd - python app.py
 
 The best model was the GBTClassifier with the below parameters. The final model was an improvement when compared to the other models. The F1 metric had a 15 point improvement compared to the base model and 15 increase in accuracy; additionally, the model had a16.9 point improvement in AUC.
 
-```
+
 | MODEL        | ACCURACY          | F1  | AUC |
 |:---------------:|:-------------:|:------:|:----:|
 | Base GBT      | 0.589 | 0.551 |0.396|
@@ -73,7 +73,7 @@ The best model was the GBTClassifier with the below parameters. The final model 
 | Best SVM        | 0.743      |    0.634 |0.5|
 |  Best GBT    |   0.743       |  0.700    |  0.565   |
 
-```
+
 ### hyperparameter best model
 
 maxIter: 20
