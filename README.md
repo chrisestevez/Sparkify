@@ -29,9 +29,18 @@ The dataset is imbalanced because around 22% percent of users have canceled the 
 * Install required packages with:
     * pip install -r requirements.txt
 
+## Flask Web App
+To run the Flask app please run.py.
+
 **Step Run app** -  run.py - run at root of app folder.
 
 cmd - python app.py
+
+
+## Web App Screenshots
+
+<img src="./imgs/app.png"  weight="600" height="500"/>
+<img src="./imgs/churn.png"  weight="600" height="500"/>
 
 ## FOLDER STRUCTURE
 
@@ -50,16 +59,32 @@ cmd - python app.py
 * `requirements.txt` - File containing all python module requirements
 * `Sparkify.ipynb` - File containing project code
 
-## Web App Screenshots
-
-<img src="./imgs/app.png"  weight="600" height="500"/>
 
 
 ## Results
 
+The best model was the GBTClassifier with the below parameters. The final model was an improvement when compared to the other models. The F1 metric had a 15 point improvement compared to the base model and 15 increase in accuracy; additionally, the model had a16.9 point improvement in AUC.
+
+```
+| MODEL        | ACCURACY          | F1  | AUC |
+|:---------------:|:-------------:|:------:|:----:|
+| Base GBT      | 0.589 | 0.551 |0.396|
+| Base SVM      | 0.743     |   0.634 |0.5|
+| Best SVM        | 0.743      |    0.634 |0.5|
+|  Best GBT    |   0.743       |  0.700    |  0.565   |
+
+```
+### hyperparameter best model
+
+maxIter: 20
+maxDepth: 2
+maxBins 40
+minInstancesPerNode: 1
+
 After hyperparameter tuning, the GBT model did perform better. There is evidence that this was due to the additional training. The numFolds was kept low to reduce training time for the project, especially after Identifying an issue with the training data where the models were using incorrect features. The results indicate that further training could improve the model. The total number of features gave the gradient boosting model a better performance than SVM. The increase in metrics might increase as the data gets bigger and more features are added.
 
 Should additional training not increase model performance. More feature engineering could be required. For Example, identifying gaps at logon or just looking back a couple of weeks to see if the user behavior has changed.
+
 
 ## Best Model
 Model GBT
@@ -79,4 +104,7 @@ I think two areas of improvement that could be implemented are moving to the ful
 ## Acknowledgements
 
 * [udacity](https://www.udacity.com/)
+
+## Developer
+[Chris Estevez](https://www.linkedin.com/in/christopher-estevez/)
 
